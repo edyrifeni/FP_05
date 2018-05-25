@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    .warnaNav{
+
+      background-color: #800000;
+      }
+      .link{color: white}
+
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>Kontak Kami</title>
+</head>
+<body>
+  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-inverse warnaNav link" >
+      <a class="navbar-brand " href="index.html" style="color: white">ResepKu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: white">Home <span class="sr-only">(current)</span></a>
+          </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+              Resep
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="#">Ayam</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Tempe</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Daging</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ikan</a>
+
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white">Kirim Resep</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white">Kontak</a>
+          </li>
+          
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success my-2 my-sm-0" style="background-color: orange" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <h1>Kontak Kami</h1>
+ 
+
+<!--     map -->
+    <div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<br>
+
+  
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Kirim Pesan Kamu</h3>
+      <p>Kamu dapat menghubungi Kami melalui kontak yang tersedia atau dapat langsung datang ke workshop kami di alamat yang tersedia</p>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-form-label"></label>
+            <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Nama Kamu">
+          <br>
+          <input type="email" class="form-control" placeholder="Email Kamu">
+          <br>
+          <input type="text" class="form-control" placeholder="Subject">
+          <br>
+          <textarea class="form-control" placeholder="Isi" rows="4"></textarea>
+          <br>
+          <button type="submit" class="btn btn-secondary" style="background-color: orange">Submit</button>
+          </div>
+        </div>
+    </div>
+  
+
+
+    <div class="col-md-3">
+      <h3>Hunting Alamat</h3>
+      <h6> Jl. Tluki 02 No. 123 RT 07 RW 02 Condong Catur Sleman, Yogyakata 55165</h6>
+      <h3>Telephone</h3>
+      <h6>(0291)588000</h6>
+    </div>
+  </div> 
+
+<!-- footer -->
+<div class="container">
+   <div class="row mb-3 text-center" style="background-color: #800000; color: white">
+    <div class="col-md-4">
+      <h4>Find Us On</h4>
+      <hr style="background-color: white">
+    </div>
+    <div class="col-md-4">
+      <h4>Widget</h4>
+      <hr style="background-color: white">
+      <ul class="column list-unstyled">
+        <li> <a href="#">Term Of Service</a></li>
+        <li> <a href="#">Privacy Policy</a></li>
+        <li> <a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4>Who are We ?</h4>
+      <hr style="background-color: white">
+      <p>Kami adalah anak gembala selalu riang serta gembira</p>
+    </div>
+
+    
+   </div>
+</div>
+
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
