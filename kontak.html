@@ -6,13 +6,15 @@
 
       background-color: #800000;
       }
-      .link{color: white}
-
+      
 
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-social.css">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
   <title>Kontak Kami</title>
 </head>
 <body>
@@ -62,47 +64,45 @@
     </nav>
 
     <h1>Kontak Kami</h1>
- 
-
-<!--     map -->
-    <div id="map" style="width:100%;height:400px;"></div>
+  <div id="map" style="width:100%;height:400px;background:yellow"></div>
 
 <script>
 function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+var mapOptions = {
+    center: new google.maps.LatLng(-7.795580, 110.369490),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCznoztwTENeNHWoDpzV07AxN_UjIjZUN0&callback&callback=myMap"></script>
+ 
 
 <br>
-
-  
-  <div class="row">
+<div class="row">
     <div class="col-md-8">
       <h3>Kirim Pesan Kamu</h3>
       <p>Kamu dapat menghubungi Kami melalui kontak yang tersedia atau dapat langsung datang ke workshop kami di alamat yang tersedia</p>
-        <div class="form-group row">
-          <label for="colFormLabel" class="col-form-label"></label>
-            <div class="col-sm-4">
-          <input type="text" class="form-control" placeholder="Nama Kamu">
-          <br>
-          <input type="email" class="form-control" placeholder="Email Kamu">
-          <br>
-          <input type="text" class="form-control" placeholder="Subject">
-          <br>
-          <textarea class="form-control" placeholder="Isi" rows="4"></textarea>
-          <br>
-          <button type="submit" class="btn btn-secondary" style="background-color: orange">Submit</button>
-          </div>
-        </div>
-    </div>
-  
+<form ng-app="" name="myForm">
+  <div class="form-group row">
+     <div class="col-sm-5">
+  <input type="text" class="form-control" placeholder="Nama Kamu">
+  <br>
+    <input type="email" name="myAddress" ng-model="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Kamu">
+    <span ng-show="myForm.myAddress.$error.email">Masukan email yang benar lur</span>
+    <br>
+    <input type="text" class="form-control" placeholder="Subject">
+    <br>
+    <textarea class="form-control" placeholder="Isi" rows="4"></textarea>
+    <br>
+    <button type="submit" class="btn btn-secondary" style="background-color: orange">Submit</button>
 
+</form>
+</div>
+</div>
+</div>
 
     <div class="col-md-3">
       <h3>Hunting Alamat</h3>
@@ -112,26 +112,36 @@ function myMap() {
     </div>
   </div> 
 
+
 <!-- footer -->
 <div class="container">
    <div class="row mb-3 text-center" style="background-color: #800000; color: white">
     <div class="col-md-4">
       <h4>Find Us On</h4>
       <hr style="background-color: white">
+        <div class="col-md-6">
+          <a class="btn btn-block btn-social btn-facebook">
+      <span class="fa fa-facebook"></span>Facebook</a>
+  <a class="btn btn-block btn-social btn-twitter">
+      <span class="fa fa-twitter"></span>Twitter</a>
+  <a class="btn btn-block btn-social btn-instagram">
+      <span class="fa fa-instagram"></span>Instagram</a>
+      <br>
+        </div>
     </div>
     <div class="col-md-4">
       <h4>Widget</h4>
       <hr style="background-color: white">
       <ul class="column list-unstyled">
-        <li> <a href="#">Term Of Service</a></li>
-        <li> <a href="#">Privacy Policy</a></li>
-        <li> <a href="#">About Us</a></li>
+        <li> <a style="color: white" href="#">Term Of Service</a></li>
+        <li> <a style="color: white" href="#">Privacy Policy</a></li>
+        <li> <a style="color: white" href="#">About Us</a></li>
       </ul>
     </div>
     <div class="col-md-4">
       <h4>Who are We ?</h4>
       <hr style="background-color: white">
-      <p>Kami adalah anak gembala selalu riang serta gembira</p>
+      <p>Kami adalah situs penyedia berbagai resep masakan nusantara yang ter uptodate, sebelum resep di publikasi masakan di coba terlebih dahulu</p>
     </div>
 
     
@@ -141,8 +151,12 @@ function myMap() {
 
     </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    
+
+    
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>
+  </body>
+</html> 
