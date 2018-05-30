@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style type="text/css">
-    .warnaNav{
+<!doctype html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      .warnaNav{
+
       background-color: #800000;
       }
+      .link{color: white}
       
     </style>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap-social.css">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
-  <title>Kontak Kami</title>
-</head>
-<body>
-  <div class="container">
-<nav class="navbar navbar-expand-lg navbar-inverse warnaNav link" >
+
+
+    <title>ResepKu</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-inverse warnaNav link" >
       <a class="navbar-brand " href="index.html" style="color: white">ResepKu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
@@ -46,10 +52,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kirimresep.html" style="color: white">Kirim Resep</a>
+            <a class="nav-link" href="kirim-resep.html" style="color: white">Kirim Resep</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="kontak.html" style="color: white">Kontak</a>
+            <a class="nav-link" href="Kontak.html" style="color: white">Kontak</a>
           </li>
           
           
@@ -60,61 +66,73 @@
         </form>
       </div>
     </nav>
-
-    <h1>Kontak Kami</h1>
-  <div id="map" style="width:100%;height:400px;background:yellow"></div>
-
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(-7.795580, 110.369490),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCznoztwTENeNHWoDpzV07AxN_UjIjZUN0&callback&callback=myMap"></script>
- 
+    <!-- isi -->
 
 <br>
 <div class="row">
-    <div class="col-md-8">
-      <h3>Kirim Pesan Kamu</h3>
-      <p>Kamu dapat menghubungi Kami melalui kontak yang tersedia atau dapat langsung datang ke workshop kami di alamat yang tersedia</p>
-<form ng-app="" name="myForm">
-  <div class="form-group row">
-     <div class="col-sm-5">
-  <input type="text" class="form-control" placeholder="Nama Kamu">
+  <div class="col-md-6">
+    <div class="card" style="width: 33rem;">
+  <img class="card-img-top" src="assets/img/oseng-tempe-tahu-putren.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 style="color: blue">Tempe</h5>
+    <h3 class="card-title">Oseng Tempe Tahu Putren</h3>
+    <p class="card-text">Bunda suka tempe dan tahu? Oseng Tempe Tahu Putren pas banget nih buat Bunda yang bosan dengan oseng tempe tahu biasa. Jagung muda atau akrab disebut putren merupakan jenis sayuran yang sering sekali digunakan untuk olahan oseng
+    </p>
+    <p style="color: grey">17 April 2018</p>
+    <a href="Oseng-Tempe-Tahu-Putren.html" class="btn btn-primary">Baca Selengkapnya</a>
+  </div>
+</div>
+</div>
+
+  <div class="col-md-6">
+    <div class="card" style="width: 33rem;">
+  <img height="250px" width="100%" class="card-img-top" src="assets/img/tempe1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 style="color: blue">Tempe</h5>
+    <h3 class="card-title">Resep Tempe Kriuk</h3>
+    <p class="card-text">Resep dan cara membuat Tempe Kriuk yang lezat dan renyahnya tahan lama. Tempe merupakan sumber protein nabati dan sudah diakui sebagai makanan sehat di dunia. Jika Bunda penggemar tempe goreng sebagai menu hidangan sehari-hari</p>
+    <p style="color: grey">27 April 2018</p>
+    <a href="Resep-Tempe-Kriuk.html" class="btn btn-primary">Baca Selengkapnya</a>
+  </div>
+</div>
+  </div>
+</div>
+
+<br>
   <br>
-    <input type="email" name="myAddress" ng-model="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Kamu">
-    <span ng-show="myForm.myAddress.$error.email">Masukan email yang benar lur</span>
-    <br>
-    <input type="text" class="form-control" placeholder="Subject">
-    <br>
-    <textarea class="form-control" placeholder="Isi" rows="4"></textarea>
-    <br>
-    <button type="submit" class="btn btn-secondary" style="background-color: orange">Submit</button>
 
-</form>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card" style="width: 33rem;">
+  <img class="card-img-top" src="assets/img/tempe-goreng.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 style="color: blue">Tempe</h5>
+    <h3 class="card-title">Tempe Kemangi</h3>
+    <p class="card-text">Tempe Goreng Rempah Kemangi merupakan salah satu jenis olahan tempe yang cukup unik. Perpaduan tempe dan kemangi sangat menyatu dengan lezat di dalam resep tempe goreng yang satu ini.</p>
+    <p style="color: grey">09 Mei 2018</p>
+    <a href="Resep-Tempe-Goreng-Rempah-Kemangi.html" class="btn btn-primary">Baca Selengkapnya</a>
+  </div>
 </div>
 </div>
+
+  <div class="col-md-6">
+    <div class="card" style="width: 33rem;">
+  <img class="card-img-top" src="assets/img/tempe-balut-smoked-beef.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 style="color: blue">Tempe</h5>
+    <h3 class="card-title">Resep Tempe Balut Smoked Beef</h3>
+    <p class="card-text">Resep Tempe Balut Smoked Beef merupakan kreasi hidangan yang unik dan bergizi. Jika umumnya menu tempe dimasak hanya digoreng menggunakan tepung, kini Bunda bisa mengolahnya menjadi hidangan yang lebih disukai oleh si kecil</p>
+    <p style="color: grey">20 Mei 2018</p>
+    <a href="Tempe-Balut-Smoke-Beef.html" class="btn btn-primary">Baca Selengkapnya</a>
+  </div>
+</div>
+  </div>
 </div>
 
-    <div class="col-md-3">
-      <h3>Hunting Alamat</h3>
-      <h6> Jl. Tluki 02 No. 123 RT 07 RW 02 Condong Catur Sleman, Yogyakata 55165</h6>
-      <h3>Telephone</h3>
-      <h6>(0291)588000</h6>
-    </div>
-  </div> 
+<br>
 
-
-
-
-<!-- footer -->
-<div class="container">
+		<!-- footer -->
+  <div class="container">
    <div class="row mb-3 text-center" style="background-color: #800000; color: white">
     <div class="col-md-4">
       <h4>Find Us On</h4>

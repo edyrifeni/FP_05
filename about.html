@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style type="text/css">
-    .warnaNav{
-      background-color: #800000;
-      }
-      
-    </style>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<style type="text/css">
+  		.warnaNav{
+
+  		background-color: #800000;
+  		}
+  		.link{color: white}
+  		
+  	</style>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap-social.css">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
-  <title>Kontak Kami</title>
-</head>
-<body>
-  <div class="container">
-<nav class="navbar navbar-expand-lg navbar-inverse warnaNav link" >
+
+
+    <title>ResepKu</title>
+  </head>
+  <body>
+  	<div class="container">
+        <nav class="navbar navbar-expand-lg navbar-inverse warnaNav link" >
       <a class="navbar-brand " href="index.html" style="color: white">ResepKu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
@@ -46,10 +52,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kirimresep.html" style="color: white">Kirim Resep</a>
+            <a class="nav-link" href="kirim-resep.html" style="color: white">Kirim Resep</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="kontak.html" style="color: white">Kontak</a>
+            <a class="nav-link" href="Kontak.html" style="color: white">Kontak</a>
           </li>
           
           
@@ -60,58 +66,74 @@
         </form>
       </div>
     </nav>
+ <br>
+    <div style="text-align: center;">
+      <h1>About Us</h1>
+      <h3>Orang bilang Tak kenal Maka tak sayang, Kenalan yuk</h3>
+      <p>kami adalah tiga orang mahasiswa yang mencoba untuk menyelesaikan tugas final projek pemrograman web, dengan membuat situs web ini. yaitu situs web tentang resep masakan dengan berbagai macam bahan masakan khas indonesia. dan disediakan pula resep dari bahan masakan tersebut menjadi macam macam masakan khas yang berada di indonesia. dengan bahan dan bumbu yang tentunya mudah untuk dicari di sekitar kita.</p>
 
-    <h1>Kontak Kami</h1>
-  <div id="map" style="width:100%;height:400px;background:yellow"></div>
+      <br>
 
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(-7.795580, 110.369490),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-</script>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="rounded-circle" src="assets/img/me.jpg" alt="Card image cap" width="250" height="250">
+            <h4>Alex</h4>
+            <h6 style="color: grey">Ceo</h6>
+            <p>Suka sama cimol</p>
+              <a class="btn btn-social-icon btn-twitter" href="#">
+              <span class="fa fa-twitter" href="#"></span>
+              </a>
+              <a class="btn btn-social-icon btn-facebook" href="#">
+              <span class="fa fa-facebook"></span>
+              </a>
+              <a class="btn btn-social-icon btn-instagram" href="https://www.Instagram.com/rife__">
+              <span class="fa fa-instagram"></span>
+              </a>
+          </div>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCznoztwTENeNHWoDpzV07AxN_UjIjZUN0&callback&callback=myMap"></script>
- 
+          <div class="col-md-4">
+            <img class="rounded-circle" src="assets/img/mrl.jpg" alt="Card image cap" width="250" height="250">
+            <h4>Pamela</h4>
+            <h6 style="color: grey">Beauty Athusiast</h6>
+            <p>Tapi gak bisa make up</p>
+              <a class="btn btn-social-icon btn-twitter" href="#">
+              <span class="fa fa-twitter" href="#"></span>
+              </a>
+              <a class="btn btn-social-icon btn-facebook" href="#">
+              <span class="fa fa-facebook"></span>
+              </a>
+              <a class="btn btn-social-icon btn-instagram" href="https://www.Instagram.com/pamelahapsari__">
+              <span class="fa fa-instagram"></span>
+              </a>
+          </div>
+
+          <div class="col-md-4">
+            <img class="rounded-circle" src="assets/img/ridlo.jpg" alt="Card image cap" width="250" height="250">
+            <h4>Ridlo</h4>
+            <h6 style="color: grey">Seniman</h6>
+            <p>Fotographer Tante - Tante </p>
+              <a class="btn btn-social-icon btn-twitter" href="#">
+              <span class="fa fa-twitter" href="#"></span>
+              </a>
+              <a class="btn btn-social-icon btn-facebook" href="#">
+              <span class="fa fa-facebook"></span>
+              </a>
+              <a class="btn btn-social-icon btn-instagram" href="https://www.Instagram.com/ridloarifandi">
+              <span class="fa fa-instagram"></span>
+              </a>
+          </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
 
 <br>
-<div class="row">
-    <div class="col-md-8">
-      <h3>Kirim Pesan Kamu</h3>
-      <p>Kamu dapat menghubungi Kami melalui kontak yang tersedia atau dapat langsung datang ke workshop kami di alamat yang tersedia</p>
-<form ng-app="" name="myForm">
-  <div class="form-group row">
-     <div class="col-sm-5">
-  <input type="text" class="form-control" placeholder="Nama Kamu">
-  <br>
-    <input type="email" name="myAddress" ng-model="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Kamu">
-    <span ng-show="myForm.myAddress.$error.email">Masukan email yang benar lur</span>
-    <br>
-    <input type="text" class="form-control" placeholder="Subject">
-    <br>
-    <textarea class="form-control" placeholder="Isi" rows="4"></textarea>
-    <br>
-    <button type="submit" class="btn btn-secondary" style="background-color: orange">Submit</button>
-
-</form>
-</div>
-</div>
-</div>
-
-    <div class="col-md-3">
-      <h3>Hunting Alamat</h3>
-      <h6> Jl. Tluki 02 No. 123 RT 07 RW 02 Condong Catur Sleman, Yogyakata 55165</h6>
-      <h3>Telephone</h3>
-      <h6>(0291)588000</h6>
-    </div>
-  </div> 
-
-
-
+<br>
 
 <!-- footer -->
 <div class="container">
